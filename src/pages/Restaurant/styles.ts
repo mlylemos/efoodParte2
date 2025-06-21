@@ -45,7 +45,7 @@ export const LoadingMessage = styled.p`
 
     export const Container = styled.div`
     max-width: 1024px;
-    margin: 40px auto;
+    margin: 40px auto 150px auto;
     padding: 0 16px;
 `
 

@@ -8,8 +8,6 @@ import ProductModal from '../../components/ProductModal'
 import { LoadingMessage, Banner, BannerText, Container, DishesGrid } from './styles'
 import type { Restaurante, Prato } from '../../types'
 
-
-
 const Restaurant = () => {
     const { id } = useParams()
     const [restaurante, setRestaurante] = useState<Restaurante | null>(null)

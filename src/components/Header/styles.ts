@@ -9,11 +9,11 @@ export const HeaderBar = styled.header<HeaderProps>`
   background-image: url(${bannerImage});
   background-size: cover;
   background-position: center;
-  height: 186px;
+  height: ${({ $isHome }) => ($isHome ? '360px' : '162px')};
   display: flex;
   align-items: center;
   justify-content: ${({ $isHome }) => ($isHome ? 'center' : 'space-between')};
-  padding: 0 40px;
+  padding: 0 171px;
   position: relative;
   width: 100%;
   top: 0;
@@ -23,6 +23,7 @@ export const HeaderBar = styled.header<HeaderProps>`
 
 export const Logo = styled.img`
   width: 125px;
+  height: 57.5px;
   margin-bottom: 8px;
 `
 
@@ -42,10 +43,14 @@ export const CenteredWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 50px; 
+  padding-left: 32px;
+
 `
 
 export const CenteredText = styled.p`
-  font-size: 18px;
+  font-size: 36px;
+  height: 84px;
+  width: 539px;
   color: #e66767;
   text-align: center;
   font-weight: bold;

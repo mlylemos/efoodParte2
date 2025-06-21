@@ -10,6 +10,7 @@ import {
     Portion,
     Button
 } from './styles.ts'
+import close from '../../assets/close.png'
 
 type Props = {
     isOpen: boolean
@@ -44,7 +45,7 @@ const ProductModal = ({
     return (
         <Overlay>
             <ModalContent>
-                <CloseButton onClick={onClose}>×</CloseButton>
+                <CloseButton onClick={onClose}><img src={close} alt="botao fechar" /></CloseButton>
                 <Image src={image} alt={title} />
                 <Content>
                     <Title>{title}</Title>
@@ -57,4 +58,4 @@ const ProductModal = ({
     )
 }
 
-export default ProductModal
+export default ProductModal  
