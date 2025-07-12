@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import Header from '../../components/Header'
 import Dish from '../../components/Dish'
 import Footer from '../../components/Footer'
 import ProductModal from '../../components/ProductModal'
-import { LoadingMessage, Banner, BannerText, Container, DishesGrid } from './styles'
+import { LoadingMessage, Container, DishesGrid } from './styles'
 import type { Restaurante, Prato } from '../../types'
+import RestaurantBanner from '../../components/RestaurantBanner'
 
 const Restaurant = () => {
     const { id } = useParams()
@@ -34,14 +34,12 @@ const Restaurant = () => {
 
     return (
         <>
-            <Header />
 
-            <Banner style={{ backgroundImage: `url(${restaurante.capa})` }}>
-                <BannerText>
-                    <h2>{restaurante.titulo}</h2>
-                    <p>{restaurante.descricao}</p>
-                </BannerText>
-            </Banner>
+            <RestaurantBanner
+                image={restaurante.capa}
+                name={restaurante.titulo}
+                cuisine={restaurante.tipo}
+            />
 
             <Container>
                 <DishesGrid>
@@ -56,7 +54,6 @@ const Restaurant = () => {
                     ))}
                 </DishesGrid>
             </Container>
-
             <Footer />
 
             {selectedDish && (

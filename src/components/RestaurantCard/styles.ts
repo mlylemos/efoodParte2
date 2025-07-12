@@ -16,6 +16,8 @@ export const Lista = styled.div`
 export const Card = styled.div`
   position: relative;
   width: 472px;
+  heigth: 398px;
+  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   border: 1px solid #e66767;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
@@ -25,7 +27,7 @@ export const Card = styled.div`
 
 export const Image = styled.img`
   width: 100%;
-  height: 200px;
+  height: 217px;
   object-fit: cover;
 `
 
@@ -52,22 +54,24 @@ export const Info = styled.div`
 
 export const Title = styled.h3`
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #e66767;
   margin: 0;
+  margim-bottom: 30px;
 `
 
 export const TitleRating = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 `
 
 export const RatingContainer = styled.div`
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   color: #e66767;
 
   img {
@@ -82,12 +86,13 @@ export const Description = styled.p`
   color: #e66767;
   margin: 8px 0;
   line-height: 22px;
+  margin-bottom: 15px;
 `
 export const Button = styled.button`
-  margin-top: 8px;
+  margin-top: 111px;
   padding: 8px 16px;
   background-color: #e66767;
-  color: #fff;
+  color: #FFEBD9;
   border: none;
   cursor: pointer;
   font-size: 14px;

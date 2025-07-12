@@ -43,8 +43,8 @@ const ProductModal = ({
     if (!isOpen) return null
 
     return (
-        <Overlay>
-            <ModalContent>
+        <Overlay onClick={onClose}>
+            <ModalContent onClick={(e) => e.stopPropagation()}>
                 <CloseButton onClick={onClose}><img src={close} alt="botao fechar" /></CloseButton>
                 <Image src={image} alt={title} />
                 <Content>

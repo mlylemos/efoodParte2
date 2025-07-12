@@ -23,19 +23,27 @@ export const HeaderBar = styled.header<HeaderProps>`
 
 export const Logo = styled.img`
   width: 125px;
-  height: 57.5px;
-  margin-bottom: 8px;
+  margin: 0 241px 0 316px;
 `
 
 export const Nav = styled.div`
   color: #e66767;
   font-size: 18px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
 `
 
 export const Cart = styled.div`
   color: #e66767;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+  margin-right: 100px;
+  white-space: nowrap;
 `
 
 export const CenteredWrapper = styled.div`
@@ -55,4 +63,16 @@ export const CenteredText = styled.p`
   text-align: center;
   font-weight: bold;
   margin: 0;
+`
+export const Containeri = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 97px;
 `

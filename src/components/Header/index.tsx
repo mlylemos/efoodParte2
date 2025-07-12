@@ -6,8 +6,10 @@ import {
     Nav,
     Cart,
     CenteredWrapper,
+    Containeri,
     CenteredText
 } from './styles'
+import Container from '../Container/styles'
 
 const Header = () => {
     const location = useLocation()
@@ -17,16 +19,20 @@ const Header = () => {
         <HeaderBar $isHome={isHome}>
             {isHome ? (
                 <CenteredWrapper>
+                    <Containeri>
                     <Logo src={logo} alt="efood logo" />
                     <CenteredText>
                         Viva experiências gastronômicas no conforto da sua casa
                     </CenteredText>
+                    </Containeri>
                 </CenteredWrapper>
             ) : (
                 <>
+                <Container>
                     <Nav>Restaurantes</Nav>
                     <Logo src={logo} alt="efood logo" />
                     <Cart>0 produto(s) no carrinho</Cart>
+                </Container>
                 </>
             )}
         </HeaderBar>
