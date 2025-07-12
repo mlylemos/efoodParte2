@@ -43,6 +43,7 @@ export const Cart = styled.div`
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   margin-right: 100px;
+  margin-left: 10px;
   white-space: nowrap;
 `
 
