@@ -20,7 +20,7 @@ const Header = () => {
             {isHome ? (
                 <CenteredWrapper>
                     <Containeri>
-                    <Logo src={logo} alt="efood logo" />
+                    <Logo src={logo} alt="efood logo" $isHome={isHome} />
                     <CenteredText>
                         Viva experiências gastronômicas no conforto da sua casa
                     </CenteredText>
